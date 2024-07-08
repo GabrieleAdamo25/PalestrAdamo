@@ -1,0 +1,17 @@
+// Funzione per gestire il login
+function login(event) {
+    event.preventDefault(); // Per evitare il ricaricamento della pagina
+
+    // Simulazione di un login semplice
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Verifica delle credenziali (simulazione)
+    if (username === 'Gabriele' && password === 'Adamo25') {
+        // Login riuscito, visualizza la sezione Abbonamento
+        document.getElementById('abbonamento').classList.remove('d-none');
+    } else {
+        // Login fallito, mostra un messaggio di errore (opzionale)
+        alert('Username o password non validi. Riprova.');
+    }
+}
